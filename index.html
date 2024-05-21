@@ -74,7 +74,7 @@
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
             weatherIcon.src = "images/" + lowercaseCondition + ".png"
-            weatherIcon.alt = condition;
+            weatherIcon.alt = lowercaseCondition;
 
             document.querySelector(".weather").style.display = "block";
         }
